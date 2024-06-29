@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
-  toggleTodo,
   removeTodo,
   markCompleted,
   markIncomplete,
@@ -27,6 +26,7 @@ const TodoItem = ({ todo, index }) => {
     }
     dispatch(editTodo(index, editText.trim()));
     setIsEditing(false);
+    setError(''); // Clear error message on successful save
   };
 
   return (
