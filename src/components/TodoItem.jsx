@@ -4,7 +4,7 @@ import {
   removeTodo,
   markCompleted,
   markIncomplete,
-  editTodo, // Import editTodo action
+  editTodo, // Import editTodo actions
 } from '../redux/actions';
 import { FaTrash, FaCheck, FaTimes, FaEdit, FaSave } from 'react-icons/fa';
 
