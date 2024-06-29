@@ -1,8 +1,39 @@
-# React + Vite
+# QuadB-Assignment
+QUADB Assignment : Design a Simple React To-Do Application.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Drag and Drop**: Users can drag and drop tasks/cards from one status to another for easy management.
+- **Add Tasks**: Users can add tasks using the "New" button under any status.
+- Delete Task: Remove tasks from the list.
+- **Task Details**: Clicking on a task opens a new page where users can change the title, status, and description of the task. Tasks can also be deleted from the details page.
+- **Local Storage**: Information is stored in local storage for persistence or can use [JSONPlaceholder](https://jsonplaceholder.typicode.com/) for API integration.
+- **Card Count**: The board displays the count of cards under each status for better organization.
+
+## Technologies
+
+- **Framework**: Preferably developed using Nuxt.js for server-side rendering and SEO benefits.
+- **CSS Framework**: Utilize any CSS framework for styling purposes to enhance the UI.
+  
+## Submission Guidelines
+
+- **Live Hosting**: Host the project live on a platform like Netlify or GitHub Pages to make it accessible.
+- **GitHub Link**: Share the GitHub repository link for reviewing the codebase and project structure.
+
+## Brownie Points
+
+- **Add New Status**: Implement the option to add a new status dynamically to customize the board.
+- **UI Design**: Design a visually appealing user interface resembling the provided screenshot for a better user experience.
+
+## How To Run
+
+Install the necessary dependencies using npm:
+- **npm install**
+  
+Run the Application:
+- **npm start**
+
+
+Thank you for considering this assignment! 
