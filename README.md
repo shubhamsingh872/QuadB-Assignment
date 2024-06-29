@@ -33,7 +33,7 @@ Install the necessary dependencies using npm:
 - **npm install**
   
 Run the Application:
-- **npm start**
+- **npm run dev**
 
 
 Thank you for considering this assignment! 
