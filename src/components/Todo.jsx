@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import TodoList from './TodoList';
 import FilterButtons from './FilterButtons';
 import { BsSearch, BsPlus } from 'react-icons/bs';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { addTodo, updateSearchTerm, setTodos } from '../redux/actions';
 
 const Todo = () => {
@@ -72,7 +73,7 @@ const Todo = () => {
             onChange={(e) => handleSearchChange(e.target.value)}
           />
           <button className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-            <BsSearch size={20} />
+            <BsSearch size={20}/>
           </button>
         </div>
       </div>
@@ -80,6 +81,24 @@ const Todo = () => {
       <TodoList />
       <footer className="mt-4 text-center text-gray-500 text-sm">
         <p>&copy; {new Date().getFullYear()} Shubham Kumar ❤️</p>
+        <div className="flex justify-center space-x-4 mt-2">
+          <a
+            href="https://www.linkedin.com/in/shubham-kumar-8295bb227/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://github.com/shubhamsingh872"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-800 hover:text-gray-900"
+          >
+            <FaGithub size={24} />
+          </a>
+        </div>
       </footer>
     </div>
   );
