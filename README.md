@@ -1,21 +1,16 @@
 # QuadB-Assignment
 QUADB Assignment : Design a Simple React To-Do Application.
-
+Live Demo: <a href="https://quadb-assignment-snowy.vercel.app/" target="_blank">QuadB ToD-o</a>
 
 
 ## Features
 
-- **Drag and Drop**: Users can drag and drop tasks/cards from one status to another for easy management.
 - **Add Tasks**: Users can add tasks using the "New" button under any status.
 - Delete Task: Remove tasks from the list.
 - **Task Details**: Clicking on a task opens a new page where users can change the title, status, and description of the task. Tasks can also be deleted from the details page.
 - **Local Storage**: Information is stored in local storage for persistence or can use [JSONPlaceholder](https://jsonplaceholder.typicode.com/) for API integration.
 - **Card Count**: The board displays the count of cards under each status for better organization.
 
-## Technologies
-
-- **Framework**: Preferably developed using Nuxt.js for server-side rendering and SEO benefits.
-- **CSS Framework**: Utilize any CSS framework for styling purposes to enhance the UI.
   
 ## Submission Guidelines
 
