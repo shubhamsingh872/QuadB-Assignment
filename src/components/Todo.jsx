@@ -12,7 +12,7 @@ const Todo = () => {
   const dispatch = useDispatch();
   const [newTodoText, setNewTodoText] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
-  const [error, setError] = useState('');
+
 
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem('todos'));
@@ -20,6 +20,7 @@ const Todo = () => {
       dispatch(setTodos(storedTodos));
     }
   }, [dispatch]);
+
 
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
@@ -33,9 +34,6 @@ const Todo = () => {
     if (newTodoText.trim() !== '') {
       handleAddTodo(newTodoText.trim());
       setNewTodoText('');
-      setError('');
-    } else {
-      setError('Todo text cannot be empty!');
     }
   };
 
@@ -50,11 +48,11 @@ const Todo = () => {
       <div className="flex items-center mb-4">
         <input
           id="addTodoInput"
-          className={`flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 ${error ? 'border-red-500' : ''}`}
+          className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
           type="text"
           placeholder="Add Todo"
           value={newTodoText}
-          onChange={(e) => { setNewTodoText(e.target.value); setError(''); }}
+          onChange={(e) => setNewTodoText(e.target.value)}
         />
         <button
           className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
@@ -63,10 +61,6 @@ const Todo = () => {
           <BsPlus size={20} />
         </button>
       </div>
-
-      {error && (
-        <div className="text-red-500 text-sm mb-2">{error}</div>
-      )}
 
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <FilterButtons />
@@ -104,6 +98,7 @@ const Todo = () => {
           >
             <FaGithub size={24} />
           </a>
+
         </div>
       </footer>
     </div>
