@@ -1,5 +1,5 @@
-# QuadB-Assignment
-QUADB Assignment : Design a Simple React To-Do Application.
+# ToDo List - Task Platform
+ToDo List : Design a Simple React To-Do Application.
 Live Demo: <a href="https://quadb-assignment-snowy.vercel.app/" target="_blank">QuadB ToD-o</a>
 
 
